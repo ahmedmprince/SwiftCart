@@ -3,7 +3,7 @@
 A simple, dynamic, and responsive e-commerce platform built with Vanilla JavaScript and Tailwind CSS, utilizing the FakeStoreAPI for real-time data.
 
 ## 🚀 Live Link
-[Click here to view the live site](YOUR_DEPLOYED_URL_HERE)
+[Click here to view the live site](https://ahmedmprince.github.io/SwiftCart/)
 
 ## 🛠️ Technology Stack
 - **HTML5**
