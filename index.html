@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCart || Your Shopping Companion</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- font  awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind & daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font intr -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+        <!-- stylesheet -->
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+
+<body> 
+
+  <!-- navbar -->
+
+  <section id="navbar-section" class="fixed top-0 left-0 w-full z-50 shadow-md bg-base-100">
+    
+    <div class="navbar px-4 md:px-10 lg:px-20">
+      
+      <div class="navbar-start">
+        <a class="font-extrabold text-purple-700 text-2xl md:text-3xl cursor-pointer">SwiftCart</a>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-lg font-medium gap-2">
+          <li><a class="hover:bg-purple-700 hover:text-white transition-all duration-300 rounded-lg">Home</a></li>
+          <li><a href="products.html" class="hover:bg-purple-700 hover:text-white transition-all duration-300 rounded-lg">Products</a></li>
+          <li><a href="aboutUs.html" class="hover:bg-purple-700 hover:text-white transition-all duration-300 rounded-lg">About Us</a></li>
+          <li><a href="contact.html" class="hover:bg-purple-700 hover:text-white transition-all duration-300 rounded-lg">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end flex items-center gap-2 md:gap-4">
+        <button class="btn btn-ghost btn-circle hover:text-purple-700">
+          <i class="fa-solid fa-cart-arrow-down text-2xl"></i>
+        </button>
+
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"                   stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow-2xl border border-gray-100">
+            <li><a href="index.html" class="active:bg-purple-700 hover:text-purple-700">Home</a></li>
+            <li><a href="products.html" class="active:bg-purple-700 hover:text-purple-700">Products</a></li>
+            <li><a href="aboutUs.html" class="active:bg-purple-700 hover:text-purple-700">About Us</a></li>
+            <li><a href="contact.html" class="active:bg-purple-700 hover:text-purple-700">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- hero -->
+
+  <section class="relative">
+  <div
+    class="hero min-h-[80vh]  bg-cover bg-center bg-no-repeat"
+    style="background-image: url('./Assets/banner-image.png');" 
+  >
+    <div class="hero-overlay bg-black/50"></div>
+    
+    <div class="hero-content text-neutral-content w-full justify-start px-6 md:px-16 lg:px-32">
+      <div class="max-w-2xl flex flex-col items-start text-left">
+        
+        <h1 class="mb-5 text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight">
+          Best Collection <br class="hidden md:block"> 
+          For You
+        </h1>
+        
+        <p class="mb-8 text-sm md:text-lg lg:text-xl opacity-90 max-w-lg">
+          Discover the best products at unbeatable prices. Shop now and experience the ultimate shopping experience with us!
+        </p>
+        
+        <button class="btn bg-purple-700 hover:bg-purple-800 border-none text-white px-12 text-lg shadow-xl transition-all transform hover:scale-105">
+          Shop Now
+        </button>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Choose Us -->
+
+<section class="py-16 md:py-24 bg-base-200">
+  <div class="container mx-auto px-6 md:px-16 lg:px-20">
+    
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Why <span class="text-purple-700">Choose Us</span></h2>
+      <div class="w-20 h-1 bg-purple-700 mx-auto rounded-full"></div>
+      <p class="mt-4 text-gray-600 max-w-md mx-auto">We provide the best service and quality products to ensure a seamless shopping experience.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <div class="bg-base-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center border border-gray-100 group">
+        <div class="w-16 h-16 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-700 group-hover:text-white transition-all duration-300">
+          <i class="fa-solid fa-truck-fast text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Fast Delivery</h3>
+        <p class="text-gray-500 text-sm">Get your products delivered to your doorstep in record time, anywhere.</p>
+      </div>
+
+      <div class="bg-base-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center border border-gray-100 group">
+        <div class="w-16 h-16 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-700 group-hover:text-white transition-all duration-300">
+          <i class="fa-solid fa-headset text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3">24/7 Support</h3>
+        <p class="text-gray-500 text-sm">Our dedicated support team is always available to help you with any queries.</p>
+      </div>
+
+      <div class="bg-base-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center border border-gray-100 group">
+        <div class="w-16 h-16 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-700 group-hover:text-white transition-all duration-300">
+          <i class="fa-solid fa-shield-halved text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Secure Payment</h3>
+        <p class="text-gray-500 text-sm">Your transactions are safe with our multi-layered security encryption.</p>
+      </div>
+
+      <div class="bg-base-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center border border-gray-100 group">
+        <div class="w-16 h-16 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-700 group-hover:text-white transition-all duration-300">
+          <i class="fa-solid fa-award text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Best Quality</h3>
+        <p class="text-gray-500 text-sm">We ensure 100% authentic and high-quality products from top brands.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Trending  -->
+
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4 md:px-10 lg:px-20">
+    
+    <div class="flex justify-between items-end mb-10">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold">Trending <span class="text-purple-700">Products</span></h2>
+        <p class="text-gray-500 mt-2 text-sm md:text-base">Check out our most loved and top-rated items this week.</p>
+      </div>
+      <button class="btn btn-ghost text-purple-700 hidden md:flex">View All <i class="fa-solid fa-arrow-right ml-2"></i></button>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="card bg-base-100 shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-300 group">
+        <figure class="px-4 pt-4 relative">
+          <div class="badge badge-secondary absolute top-6 left-6 bg-purple-700 border-none text-white px-3 py-3">Top Rated</div>
+          <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product" class="rounded-xl h-64 w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        </figure>
+        <div class="card-body">
+          <div class="flex justify-between items-center mb-1">
+             <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Footwear</span>
+             <div class="flex items-center text-orange-400 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <span class="ml-1 font-bold text-gray-700">4.9</span>
+             </div>
+          </div>
+          <h2 class="card-title text-xl font-bold hover:text-purple-700 cursor-pointer">Premium Sport Shoe</h2>
+          <p class="text-gray-500 text-sm line-clamp-2">Experience the best comfort and style with our latest sport edition.</p>
+          <div class="card-actions justify-between items-center mt-4">
+            <span class="text-2xl font-bold text-gray-800">$120.00</span>
+            <button class="btn bg-purple-700 hover:bg-purple-800 text-white btn-md border-none px-6">
+               <i class="fa-solid fa-plus mr-2"></i> Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-300 group">
+        <figure class="px-4 pt-4 relative">
+          <div class="badge badge-secondary absolute top-6 left-6 bg-purple-700 border-none text-white px-3 py-3">Trending</div>
+          <img src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product" class="rounded-xl h-64 w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        </figure>
+        <div class="card-body">
+          <div class="flex justify-between items-center mb-1">
+             <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Electronics</span>
+             <div class="flex items-center text-orange-400 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <span class="ml-1 font-bold text-gray-700">4.8</span>
+             </div>
+          </div>
+          <h2 class="card-title text-xl font-bold hover:text-purple-700 cursor-pointer">Wireless Headphones</h2>
+          <p class="text-gray-500 text-sm line-clamp-2">Noise canceling technology with high-fidelity sound quality.</p>
+          <div class="card-actions justify-between items-center mt-4">
+            <span class="text-2xl font-bold text-gray-800">$85.00</span>
+            <button class="btn bg-purple-700 hover:bg-purple-800 text-white btn-md border-none px-6">
+               <i class="fa-solid fa-plus mr-2"></i> Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-300 group">
+        <figure class="px-4 pt-4 relative">
+          <div class="badge badge-secondary absolute top-6 left-6 bg-purple-700 border-none text-white px-3 py-3">Best Seller</div>
+          <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product" class="rounded-xl h-64 w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        </figure>
+        <div class="card-body">
+          <div class="flex justify-between items-center mb-1">
+             <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest">Accessories</span>
+             <div class="flex items-center text-orange-400 text-sm">
+                <i class="fa-solid fa-star"></i>
+                <span class="ml-1 font-bold text-gray-700">4.7</span>
+             </div>
+          </div>
+          <h2 class="card-title text-xl font-bold hover:text-purple-700 cursor-pointer">Luxury Wrist Watch</h2>
+          <p class="text-gray-500 text-sm line-clamp-2">A timeless piece of elegance designed for the modern lifestyle.</p>
+          <div class="card-actions justify-between items-center mt-4">
+            <span class="text-2xl font-bold text-gray-800">$250.00</span>
+            <button class="btn bg-purple-700 hover:bg-purple-800 text-white btn-md border-none px-6">
+               <i class="fa-solid fa-plus mr-2"></i> Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+
+<footer class="bg-gray-900 text-white py-16">
+    <div class="container mx-auto px-6 md:px-16 lg:px-24 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="col-span-1 md:col-span-1">
+        <h2 class="text-2xl font-black text-purple-400 mb-4">SwiftCart</h2>
+        <p class="text-gray-400">The best e-commerce experience with high quality products and services.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-6">Quick Links</h4>
+        <ul class="space-y-3 text-gray-400">
+          <li><a href="#" class="hover:text-purple-400">Shop</a></li>
+          <li><a href="#" class="hover:text-purple-400">About Us</a></li>
+          <li><a href="#" class="hover:text-purple-400">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-span-1 md:col-span-2">
+        <h4 class="font-bold mb-6">Newsletter</h4>
+        <div class="flex gap-2">
+          <input type="text" placeholder="Email Address" class="input bg-gray-800 border-none w-full rounded-full">
+          <button class="btn bg-purple-700 border-none text-white rounded-full px-8">Join</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us || SwiftCart</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- font  awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind & daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font intr -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+          <!-- stylesheet -->
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+
+<body> 
+
+  <!-- navbar -->
+
+  <section id="navbar-section" class="fixed top-0 left-0 w-full z-50 shadow-md bg-base-100">
+    
+    <div class="navbar px-4 md:px-10 lg:px-20">
+      
+      <div class="navbar-start">
+        <a class="font-extrabold text-purple-700 text-2xl md:text-3xl cursor-pointer">SwiftCart</a>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-lg font-medium gap-2">
+          <li><a href="index.html" class="hover:bg-purple-700 hover:text-white transition-all duration-300 rounded-lg">Home</a></li>
+          <li><a href="products.html" class="hover:bg-purple-700 hover:text-white transition-all duration-300 rounded-lg">Products</a></li>
+          <li><a href="aboutUs.html" class="hover:bg-purple-700 hover:text-white transition-all duration-300 rounded-lg">About Us</a></li>
+          <li><a href="contact.html" class="hover:bg-purple-700 hover:text-white transition-all duration-300 rounded-lg">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end flex items-center gap-2 md:gap-4">
+        <button class="btn btn-ghost btn-circle hover:text-purple-700">
+          <i class="fa-solid fa-cart-arrow-down text-2xl"></i>
+        </button>
+
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"                   stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow-2xl border border-gray-100">
+            <li><a href="index.html" class="active:bg-purple-700 hover:text-purple-700">Home</a></li>
+            <li><a href="products.html" class="active:bg-purple-700 hover:text-purple-700">Products</a></li>
+            <li><a href="aboutUs.html" class="active:bg-purple-700 hover:text-purple-700">About Us</a></li>
+            <li><a href="contact.html" class="active:bg-purple-700 hover:text-purple-700">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- aboutUs -->
+   <section class="py-20 bg-white overflow-hidden">
+  <div class="container mx-auto px-6 md:px-16 lg:px-24">
+    <div class="flex flex-col lg:flex-row items-center gap-16">
+      
+      <div class="lg:w-1/2 relative">
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-purple-100 rounded-full -z-10 blur-2xl opacity-60"></div>
+        <div class="absolute -bottom-10 -right-5 w-32 h-32 bg-purple-200 rounded-full -z-10 blur-xl opacity-50"></div>
+        
+        <div class="relative z-10">
+          <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" 
+               alt="Our Team" 
+               class="rounded-[2rem] shadow-2xl border-8 border-white group hover:scale-[1.02] transition-transform duration-500">
+          
+          <div class="absolute -bottom-6 -right-6 bg-purple-700 text-white p-6 rounded-2xl shadow-xl hidden md:block">
+            <p class="text-4xl font-black italic">10+</p>
+            <p class="text-sm font-medium">Years of Trust</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-1/2 space-y-8">
+        <div>
+          <span class="text-purple-700 font-bold tracking-widest uppercase text-sm">About SwiftCart</span>
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mt-2 leading-tight">
+            We Revolutionize Your <br> <span class="text-purple-700">Shopping Experience</span>
+          </h2>
+        </div>
+
+        <p class="text-gray-600 text-lg leading-relaxed">
+          At SwiftCart, we believe that shopping should be more than just a transaction. It’s about discovering quality, value, and a seamless journey from browsing to delivery. We curate the finest products worldwide to ensure you get nothing but the best.
+        </p>
+
+        <div class="grid grid-cols-2 gap-6 pt-4">
+          <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100">
+            <h4 class="text-3xl font-bold text-purple-700">50k+</h4>
+            <p class="text-gray-500 font-medium">Happy Customers</p>
+          </div>
+          <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100">
+            <h4 class="text-3xl font-bold text-purple-700">12k+</h4>
+            <p class="text-gray-500 font-medium">Premium Products</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-4 pt-4">
+          <button class="btn bg-purple-700 hover:bg-purple-800 text-white border-none px-8 rounded-full shadow-lg shadow-purple-200">
+            Learn More
+          </button>
+          <button class="btn btn-outline border-purple-700 text-purple-700 hover:bg-purple-700 hover:border-purple-700 rounded-full px-8">
+            Our Vision
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+
+<footer class="bg-gray-900 text-white py-16">
+    <div class="container mx-auto px-6 md:px-16 lg:px-24 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="col-span-1 md:col-span-1">
+        <h2 class="text-2xl font-black text-purple-400 mb-4">SwiftCart</h2>
+        <p class="text-gray-400">The best e-commerce experience with high quality products and services.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-6">Quick Links</h4>
+        <ul class="space-y-3 text-gray-400">
+          <li><a href="#" class="hover:text-purple-400">Shop</a></li>
+          <li><a href="#" class="hover:text-purple-400">About Us</a></li>
+          <li><a href="#" class="hover:text-purple-400">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-span-1 md:col-span-2">
+        <h4 class="font-bold mb-6">Newsletter</h4>
+        <div class="flex gap-2">
+          <input type="text" placeholder="Email Address" class="input bg-gray-800 border-none w-full rounded-full">
+          <button class="btn bg-purple-700 border-none text-white rounded-full px-8">Join</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
